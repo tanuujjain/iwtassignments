@@ -1,0 +1,50 @@
+body{
+        background-color: aquamarine;
+        background-image: url('images/14.jpeg'),url('images/19.jpg');
+        background-repeat: no-repeat;
+        background-size: 300px, contain;
+        background-position:  center center ,0 center;
+        background-blend-mode: darken;
+        background-attachment: fixed;
+       
+}
+p{
+    background-color: rgba(255, 255, 0, 0.6); 
+    background-image: conic-gradient(rgba(255,255,0,0.159)70%,green,blue);
+    word-spacing: 20px;
+    letter-spacing: 15px;
+    line-height: 2em;
+    text-align: center;
+    
+}
+div{
+    height: 200px;
+    width: 200px;
+    border-style: dashed;
+    border-color: black;
+    border-width: 10px;
+    border-radius: 30px;
+    padding: 20px 50px 40px;
+    margin: 20px;
+    color: beige;
+    font-size: 20px;
+}
+.red{
+    background-color: red;
+
+}
+.blue{
+    background-color: blue;
+    border-radius: 50%;
+    width: 400px;
+    padding: 50px;
+    outline: goldenrod 10px solid;
+    outline-offset: 10px;
+    border-image: url('images/2.jpeg');
+    border-image-repeat: round;
+    box-shadow: 1px 0px 100px black;
+}
+.outer{
+    height: auto;
+    width: auto;
+}

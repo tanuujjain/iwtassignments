@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+</head>
+<body bgcolor="#78CDDD">
+    <form method="post" action="home.html" autocomplete="on" name="f1" id="f01">
+        <fieldset>
+            <legend>LOGIN INFO</legend>
+        <label > USER NAME</label>
+        <input type="text" name="username" placeholder="enter user name" value="admin" size="30" minlength="4" maxlength="6" required/><br>
+        <label >PASSWORDD</label>
+        <input type="password" name="pass" placeholder="enter password "/><br>
+        </fieldset>
+        <label for="age">Enter age</label>
+        <input type="range" name="age" min="1" max="150" />Years
+        <label for="dob">DOB</label>
+        <input type="date" name="dob" id=""><br>
+        <label for="color">COLOR</label>
+        <input type="color" name="color" id="">
+        <label for="branch">CHOOSE YOUR BRANCH</label>
+        
+        <input type="radio" name="branch" value="IT" checked/>IT<br>
+       
+        <input type="radio" name="branch" value="CS"/>CS<br>
+        <input type="radio" name="branch" value="MT"/>MT<br>
+        <label for="Hobbies">YOUR HOBBIES</label>
+        <input type="checkbox" name="hobbies" value="R"/>READING<br>
+        <input type="checkbox" name="hobbies" value="W"/>WRITING<br>
+        <input type="checkbox" name="hobbies" value="F" checked/>FIGHTING<br>
+        <input type="checkbox" name="hobbies" value="P" checked/>PROXY<br>
+        <label for="address">YOUR ADDRESS</label>
+        <textarea name="address" cols="30" rows="10" placeholder="enter your address">YOUR ADDRESS </textarea><br>
+        <label for="state">state</label>
+        <label for="city">state</label>
+        <input type="text" name="city" list="ct" /> <br>
+        <datalist id="ct">
+            <option value="">TONK</option>
+            <option value="">JAIPUR</option>
+            <option value="">AGRA</option>
+            <option value="">JODHPUR</option>
+        </datalist>
+        <select name="state" id="" size="2" multiple>
+            <option value="RJ">RAJASTHAN</option>
+            <option value="UP">UTTAR PRADESH</option>
+            <option value="MP">TAMIL NADU</option>
+        </select>
+        <input type="reset" name="reset" value="reset">
+        <input type="Submit" name="submit" value="Login" />
+        <input type="button" value="register" />
+    </form>
+</body>
+</html>

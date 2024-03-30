@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDS</title>
+    <style>
+        .card{
+            width: 300px;
+            padding: 20px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+            transition: 0.3s;
+            float: left;
+            position: relative;
+        }
+        .card :hover{
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4);
+        }
+    .card img{
+        width: 100%;
+        height: 60%;
+        border-radius: 5px;
+        display: block;
+        border: solid 1px rgba(230,140, 230, .4);
+    }
+    .card h2{
+        font-size: 20px;
+        margin-top: 10px;
+    } 
+    .card p {
+        font-size: 16px;
+        color: #666;
+
+    }
+    #cardContainer{
+        margin: 10px auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .card div{
+        background-color: rgba(0,0,0,0.6);
+        width: 150px;
+        color: bisque;
+        position: absolute;
+        top: 50%;
+        transform: rotate(-30deg);
+
+    }
+    </style>
+</head>
+<body>
+    <div id="cardsContainer"></div>
+   <script>
+    titles=["Title 1","Title 2","Title 3","Title 4","Title 5"];
+    description=[
+        "description 1",
+        "description 2",
+        "description 3",
+        "description 4",
+        "description 5",
+    ];
+    images=[
+        "1.jpeg",
+        "2.jpeg",
+        "3.jpeg",
+        "4.jpeg",
+        "5.jpeg",
+    ];
+
+    dates=["28-March","15-April","18-April","28-April","4-May"];
+    function generateCards(titles,description,images){
+        cardsContainer=document.getElementById("cardsContainer");
+        for(i=0;i<titles.length;i++){
+            card=document.createElement("div");
+            card.className="card";
+
+            image=document.createElement("img");
+            image.src=images[i];
+            card.appendChild(image);
+
+            dt=document.createElement("div");
+            dt.textContent=dates[i];
+            card.append(dt)
+
+            title=document.createElement("h2");
+            title.textContent=titles[i];
+            card.appendChild(title);
+
+            description=document.createElement("p");
+            description.textContent=description[i];
+            card.appendChild(description);
+
+            cardsContainer.appendChild(card);
+        }
+        
+    }
+     generateCards(titles,description,images);
+   </script>
+    
+</body>
+</html>

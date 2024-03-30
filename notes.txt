@@ -1,0 +1,133 @@
+version 5 html
+[HTML_>HyperText Markup Language]
+<!DOCTYPE html>
+<html>      //parser depends on html element
+	<head>
+		//metadata
+	</head>
+	<body>
+		//want to display
+		<h1>_____</h1>
+	</body>
+</html>
+
+elements->starting tag, contenet, ending tag   
+[predefind <tag_name> for starting tag]
+[content->text/html element/ empty]
+[predefined </tag_name> for closing tag]
+
+attributes->
+predefined Att_name=predefined Att_value
+<tag_name Att_name=Att_value>
+
+Document->Collection of information
+Web document->facility of audio and vedio also
+
+Heading->tag name - h; types-6; 
+
+Aligment-> <p align=justify>; <p align=center>; <p align=left>; 
+<p align=right>
+
+Font-> <font color=[any color]
+           size=1 to 7
+           face="Arial"[any font type] >
+           _____
+           </font>
+
+Text Styles->
+bold-<b>
+underline-<u>
+italic-<i>
+subscript-<sub>
+superscript-<sup>
+
+to break a line-<br>
+empty tag <br />
+
+horizontal rule-<hr>
+
+<pre> ->pre formated paragraph tag->includes multiple tabs for spacing
+
+Lists->ordered and unordered
+ordered tag->[ol-orderd list; li-list item]
+	<ol type= I or i or a or A>
+		<li>_____</li>
+		<li>_____</li>
+		<li>_____</li>
+	</ol>
+unordered tag->[ul-unorderd list; li-list item]
+	<ul type=circle or disc or square>
+		<li>_____</li>
+		<li>_____</li>
+		<li>_____</li>
+	</ul>
+
+discription list->[dl-discription list; dt-description title; dd-discription defination]
+	<dl>
+		<dt> ____ </dt>
+		<dd> _________ </dd>
+		<dt> _____ </dt>
+		<dd> ___________ </dd>
+	</dl>
+
+Image tag->empty tag
+<p align=right>
+<img src="path"   //src->source
+         height=400
+         width=300      //for getting correct ratio of dimensions, only use one dimension(height)
+         alt="This is profie pic"            //alternate text
+          />       //self closing because it is an empty tag [optional]
+</p>
+
+to make an image aligned, put it in paragraph tag and then align it
+path  can be of two types-
+absolute path and relative path
+NOTE: never use absolute path, only use relative path becauseabsolute path will always shiow alternate text when accessed by any one.
+
+Linking-
+can create links with the help of anchor tag 
+<a href="path
+     target=_self   //to open on self page
+     target=_blank  //to open on new tab
+     > Label </a>     //Label->where to click on->can be a link or button
+Label->place folder i.e. Destination
+Target->same page or new link or tab->can be given using hyperlink reference [href]
+path can be of many types-
+URL[http:// or https://], File name, E-Mail["mailto:email_on_which_we_want_to_mail"]
+by default the color of an hyperlink is blue and underlined
+
+how to add special symbols and characters to the web page-
+OC->copyright->&copy
+TM->treadmark->&trads
+OR->registered->&reg
+<->less than->&lt
+>->gtr=eater than->&gt
+&->ampercent->&amp
+for non breaking space->&nbsp
+
+
+InterLinking- When the web page is interlinked in between and can move from bottom to top or from one section of page to another section
+<a href=#heading2>  //from where we came
+<a name=heading2></a>  //the place where we are
+
+
+Tables
+<table> 
+	<tr>     //table row 
+		<td>1</td>
+		<td>2</td>
+	</tr>      
+</table>
+
+table heading-<th>
+table data-<td>
+
+width in %
+width="40%" means 40% of parent element width
+
+cellspacing->
+cellpadding->
+
+rowspan->merge two or more rows
+colspan->merge two or more columns
+[always used for cells]

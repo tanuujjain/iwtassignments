@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Ex2</title>
+</head>
+<body>
+   
+    <button onclick="clearInterval(int1)">stop it!</button>
+    <div id="display">0</div>
+    <script>
+        count=0;
+        display=document.getElementById("display")
+        bgs=["lightblue","lightpink","lightyellow","#123456","lightgrey"]
+        i=0;
+
+        function clickCount()
+        {
+            count++;
+            display.innerHTML=count;
+            document.body.style.backgroundColor=bgs[i];
+            i++;
+            if(i>=bgs.length){
+                i=0;
+            }
+        }
+        int1=setInterval(clickCount,100)
+        // a=prompt("Enter first number")
+        // b=prompt("Enter second number")
+        // c=parseInt(a)+parseInt(b);
+        // message=a + "+" + b + "=" + c;
+        // document.write(message)
+        // alert(message)
+
+    </script>
+</body>
+</html>
